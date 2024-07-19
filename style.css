@@ -10,7 +10,10 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#4203a9, #90bafc);
+    background: url(/gabriel-ramos-575OvGrdfr8-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding: 10px;
 
@@ -23,10 +26,14 @@
     /* margin-bottom: 10%; */
 }
 .calculator h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-size: 3.75rem;
 }
 .calculator span{
-    color: #fff76f;
+    color: #ffbf00;
 }
 .input-box{
     margin: 40px 0;
@@ -45,10 +52,11 @@
     font-size: 18px;
     border-radius: 5px;
     position: relative;
+    /* cursor: pointer; */
 
 }
 .input-box button{
-    background: #fff76f;
+    background: #ffbf00;
     border: 0;
     outline: none;
     padding: 15px 30px;
@@ -56,6 +64,10 @@
     font-weight: 500;
     color: #333;
     cursor: pointer;
+    transition: 1s;
+}
+.input-box button:hover{
+    transform: scale(1.05);
 }
 .input-box input::-webkit-calender-picker-indicator{
     top: 0;
